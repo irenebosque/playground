@@ -1,736 +1,141 @@
 {
-    "name": "Heatmap Example",
-    "versions": {
-        "attack": "15",
-        "navigator": "5.1.0",
-        "layer": "4.5"
-    },
-    "domain": "enterprise-attack",
-    "description": "Heatmap based on technique frequency",
-    "filters": {
-        "platforms": [
-            "Windows",
-            "Linux",
-            "macOS"
-        ]
-    },
-    "techniques": [
-        {
-            "techniqueID": "T1542.002",
-            "tactic": "persistence",
-            "color": "#e8d796",
-            "comment": "Frequency: 2752",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1063",
-            "tactic": "discovery",
-            "color": "#d809d6",
-            "comment": "Frequency: 2720",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1076",
-            "tactic": "lateral-movement",
-            "color": "#4fe727",
-            "comment": "Frequency: 2528",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1165",
-            "tactic": "persistence",
-            "color": "#80b542",
-            "comment": "Frequency: 2336",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1550.002",
-            "tactic": "defense-evasion",
-            "color": "#0f6251",
-            "comment": "Frequency: 2176",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1583.003",
-            "tactic": "resource-development",
-            "color": "#7549f2",
-            "comment": "Frequency: 2048",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1591",
-            "tactic": "reconnaissance",
-            "color": "#2e1ef8",
-            "comment": "Frequency: 2048",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1021.002",
-            "tactic": "lateral-movement",
-            "color": "#945602",
-            "comment": "Frequency: 1984",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1197",
-            "tactic": "defense-evasion",
-            "color": "#21e6fa",
-            "comment": "Frequency: 1952",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1543.003",
-            "tactic": "persistence",
-            "color": "#e83a81",
-            "comment": "Frequency: 1920",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1584.002",
-            "tactic": "resource-development",
-            "color": "#d1585a",
-            "comment": "Frequency: 1824",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1534",
-            "tactic": "lateral-movement",
-            "color": "#9c70bc",
-            "comment": "Frequency: 1824",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1587.003",
-            "tactic": "resource-development",
-            "color": "#902896",
-            "comment": "Frequency: 1792",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1005",
-            "tactic": "collection",
-            "color": "#732dc0",
-            "comment": "Frequency: 1760",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1036",
-            "tactic": "defense-evasion",
-            "color": "#b24d20",
-            "comment": "Frequency: 1760",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1037",
-            "tactic": "persistence",
-            "color": "#b46a4f",
-            "comment": "Frequency: 1760",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1053.004",
-            "tactic": "execution",
-            "color": "#49fbed",
-            "comment": "Frequency: 1728",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1062",
-            "tactic": "persistence",
-            "color": "#23fe17",
-            "comment": "Frequency: 1728",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1583.002",
-            "tactic": "resource-development",
-            "color": "#1e9724",
-            "comment": "Frequency: 1728",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1048.002",
-            "tactic": "exfiltration",
-            "color": "#800e82",
-            "comment": "Frequency: 1664",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1121",
-            "tactic": "defense-evasion",
-            "color": "#2053f7",
-            "comment": "Frequency: 1664",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1145",
-            "tactic": "credential-access",
-            "color": "#c6b362",
-            "comment": "Frequency: 1664",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1566.002",
-            "tactic": "initial-access",
-            "color": "#a58066",
-            "comment": "Frequency: 1664",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1578.002",
-            "tactic": "defense-evasion",
-            "color": "#5f4fa7",
-            "comment": "Frequency: 1632",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1055.002",
-            "tactic": "defense-evasion",
-            "color": "#72b49a",
-            "comment": "Frequency: 1632",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1098.005",
-            "tactic": "persistence",
-            "color": "#611427",
-            "comment": "Frequency: 1632",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1104",
-            "tactic": "command-and-control",
-            "color": "#8a9684",
-            "comment": "Frequency: 1632",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1192",
-            "tactic": "initial-access",
-            "color": "#59f9f9",
-            "comment": "Frequency: 1632",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1485",
-            "tactic": "impact",
-            "color": "#c409fe",
-            "comment": "Frequency: 1632",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1499.001",
-            "tactic": "impact",
-            "color": "#03366d",
-            "comment": "Frequency: 1632",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1505.002",
-            "tactic": "persistence",
-            "color": "#714a02",
-            "comment": "Frequency: 1632",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1505.003",
-            "tactic": "persistence",
-            "color": "#eeecaf",
-            "comment": "Frequency: 1600",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1526",
-            "tactic": "discovery",
-            "color": "#a016ed",
-            "comment": "Frequency: 1600",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1574.002",
-            "tactic": "persistence",
-            "color": "#36ae72",
-            "comment": "Frequency: 1600",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1584.007",
-            "tactic": "resource-development",
-            "color": "#9e1928",
-            "comment": "Frequency: 1600",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1586.003",
-            "tactic": "resource-development",
-            "color": "#8b291c",
-            "comment": "Frequency: 1568",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1589.001",
-            "tactic": "reconnaissance",
-            "color": "#62b303",
-            "comment": "Frequency: 1568",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1606.002",
-            "tactic": "credential-access",
-            "color": "#86935b",
-            "comment": "Frequency: 1568",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1619",
-            "tactic": "discovery",
-            "color": "#b4c1cf",
-            "comment": "Frequency: 1568",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1017",
-            "tactic": "lateral-movement",
-            "color": "#3dff55",
-            "comment": "Frequency: 1568",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1021.003",
-            "tactic": "lateral-movement",
-            "color": "#5a2184",
-            "comment": "Frequency: 1568",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1027.004",
-            "tactic": "defense-evasion",
-            "color": "#a5a8a0",
-            "comment": "Frequency: 1568",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1055.001",
-            "tactic": "defense-evasion",
-            "color": "#12c23f",
-            "comment": "Frequency: 1568",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1088",
-            "tactic": "defense-evasion",
-            "color": "#8ccc4e",
-            "comment": "Frequency: 1568",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1183",
-            "tactic": "privilege-escalation",
-            "color": "#99dec5",
-            "comment": "Frequency: 1536",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1201",
-            "tactic": "discovery",
-            "color": "#dfb5f3",
-            "comment": "Frequency: 1536",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1480.001",
-            "tactic": "defense-evasion",
-            "color": "#97748a",
-            "comment": "Frequency: 1536",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1518",
-            "tactic": "discovery",
-            "color": "#3ccd37",
-            "comment": "Frequency: 1536",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1546.004",
-            "tactic": "privilege-escalation",
-            "color": "#105647",
-            "comment": "Frequency: 1536",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1547.008",
-            "tactic": "persistence",
-            "color": "#245ca8",
-            "comment": "Frequency: 1504",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1548.002",
-            "tactic": "privilege-escalation",
-            "color": "#37c8ce",
-            "comment": "Frequency: 1504",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1555.004",
-            "tactic": "credential-access",
-            "color": "#b9400e",
-            "comment": "Frequency: 1504",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1564.006",
-            "tactic": "defense-evasion",
-            "color": "#c50dbe",
-            "comment": "Frequency: 1504",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1564.009",
-            "tactic": "defense-evasion",
-            "color": "#d9b78b",
-            "comment": "Frequency: 1504",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1568.002",
-            "tactic": "command-and-control",
-            "color": "#64b4e9",
-            "comment": "Frequency: 1504",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1593.003",
-            "tactic": "reconnaissance",
-            "color": "#01ded7",
-            "comment": "Frequency: 1472",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1598",
-            "tactic": "reconnaissance",
-            "color": "#42402c",
-            "comment": "Frequency: 1472",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1601.001",
-            "tactic": "defense-evasion",
-            "color": "#954f63",
-            "comment": "Frequency: 1472",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1608",
-            "tactic": "resource-development",
-            "color": "#9f0260",
-            "comment": "Frequency: 1472",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1013",
-            "tactic": "persistence",
-            "color": "#5d8d13",
-            "comment": "Frequency: 1440",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1036.008",
-            "tactic": "defense-evasion",
-            "color": "#4099ed",
-            "comment": "Frequency: 1440",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1036.009",
-            "tactic": "defense-evasion",
-            "color": "#25f72d",
-            "comment": "Frequency: 1440",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1039",
-            "tactic": "collection",
-            "color": "#e956ac",
-            "comment": "Frequency: 1440",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1052.001",
-            "tactic": "exfiltration",
-            "color": "#45babe",
-            "comment": "Frequency: 1440",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1055",
-            "tactic": "defense-evasion",
-            "color": "#0b454a",
-            "comment": "Frequency: 1440",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1056.001",
-            "tactic": "collection",
-            "color": "#39a4b7",
-            "comment": "Frequency: 1440",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1064",
-            "tactic": "defense-evasion",
-            "color": "#511d1d",
-            "comment": "Frequency: 1408",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1070.008",
-            "tactic": "defense-evasion",
-            "color": "#7976d4",
-            "comment": "Frequency: 1408",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1092",
-            "tactic": "command-and-control",
-            "color": "#e15136",
-            "comment": "Frequency: 1408",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1110.001",
-            "tactic": "credential-access",
-            "color": "#4a0ec4",
-            "comment": "Frequency: 1408",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1134.001",
-            "tactic": "defense-evasion",
-            "color": "#66419d",
-            "comment": "Frequency: 1376",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1195",
-            "tactic": "initial-access",
-            "color": "#87ed22",
-            "comment": "Frequency: 1376",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1205.002",
-            "tactic": "defense-evasion",
-            "color": "#e89ab5",
-            "comment": "Frequency: 1376",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1211",
-            "tactic": "defense-evasion",
-            "color": "#ac0ee8",
-            "comment": "Frequency: 1376",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1213.001",
-            "tactic": "collection",
-            "color": "#db3fa2",
-            "comment": "Frequency: 1376",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1487",
-            "tactic": "impact",
-            "color": "#33e66b",
-            "comment": "Frequency: 1376",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1546.007",
-            "tactic": "privilege-escalation",
-            "color": "#7ee7c4",
-            "comment": "Frequency: 1344",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1553.004",
-            "tactic": "defense-evasion",
-            "color": "#0ff8f9",
-            "comment": "Frequency: 1344",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1556.001",
-            "tactic": "credential-access",
-            "color": "#56d4ab",
-            "comment": "Frequency: 1344",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1569.001",
-            "tactic": "execution",
-            "color": "#bd1418",
-            "comment": "Frequency: 1344",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1583.005",
-            "tactic": "resource-development",
-            "color": "#fed708",
-            "comment": "Frequency: 1344",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1584.006",
-            "tactic": "resource-development",
-            "color": "#eb4960",
-            "comment": "Frequency: 1344",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1585.002",
-            "tactic": "resource-development",
-            "color": "#036441",
-            "comment": "Frequency: 1344",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1592.002",
-            "tactic": "reconnaissance",
-            "color": "#9a0307",
-            "comment": "Frequency: 1344",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1598.004",
-            "tactic": "reconnaissance",
-            "color": "#342bf8",
-            "comment": "Frequency: 1312",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1608.004",
-            "tactic": "resource-development",
-            "color": "#ef7463",
-            "comment": "Frequency: 1312",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1608.006",
-            "tactic": "resource-development",
-            "color": "#9cceba",
-            "comment": "Frequency: 1312",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1648",
-            "tactic": "execution",
-            "color": "#b00c32",
-            "comment": "Frequency: 1312",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1003.002",
-            "tactic": "credential-access",
-            "color": "#59258d",
-            "comment": "Frequency: 1312",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1036.003",
-            "tactic": "defense-evasion",
-            "color": "#f1fda2",
-            "comment": "Frequency: 1312",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1050",
-            "tactic": "persistence",
-            "color": "#2f42d6",
-            "comment": "Frequency: 1280",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1055.013",
-            "tactic": "defense-evasion",
-            "color": "#ef4553",
-            "comment": "Frequency: 1280",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1059.001",
-            "tactic": "execution",
-            "color": "#6ceaa8",
-            "comment": "Frequency: 1280",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1070",
-            "tactic": "defense-evasion",
-            "color": "#7deeec",
-            "comment": "Frequency: 1280",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1078.004",
-            "tactic": "defense-evasion",
-            "color": "#964391",
-            "comment": "Frequency: 1280",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1085",
-            "tactic": "defense-evasion",
-            "color": "#8fe2b0",
-            "comment": "Frequency: 1280",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1161",
-            "tactic": "persistence",
-            "color": "#693010",
-            "comment": "Frequency: 1280",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1164",
-            "tactic": "persistence",
-            "color": "#651549",
-            "comment": "Frequency: 1248",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1178",
-            "tactic": "privilege-escalation",
-            "color": "#d25dfa",
-            "comment": "Frequency: 1248",
-            "enabled": true
-        },
-        {
-            "techniqueID": "T1204",
-            "tactic": "execution",
-            "color": "#6ab3c8",
-            "comment": "Frequency: 1248",
-            "enabled": true
-        }
-    ],
-    "gradient": {
-        "colors": [
-            "#ff6666ff",
-            "#ffe766ff",
-            "#31a354"
-        ],
-        "minValue": 0,
-        "maxValue": 100
-    },
-    "legendItems": [],
-    "metadata": [],
-    "links": [],
-    "showTacticRowBackground": false,
-    "tacticRowBackground": "#dddddd",
-    "selectTechniquesAcrossTactics": true,
-    "selectSubtechniquesWithParent": false,
-    "selectVisibleTechniques": false
+	"name": "Heatmap Example",
+	"versions": {
+		"attack": "15",
+		"navigator": "5.1.0",
+		"layer": "4.5"
+	},
+	"domain": "enterprise-attack",
+	"description": "Heatmap based on technique frequency",
+	"filters": {
+		"platforms": [
+			"Windows",
+			"Linux",
+			"macOS"
+		]
+	},
+	"techniques": [
+		{
+			"techniqueID": "T1594",
+			"tactic": "reconnaissance",
+			"color": "#e60d0d",
+			"comment": "Frequency: 10",
+			"enabled": true
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "defense-evasion",
+			"color": "#ffe766ff",
+			"comment": "Frequency: 30",
+			"enabled": true
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "persistence",
+			"color": "#31a354",
+			"comment": "Frequency: 60",
+			"enabled": true
+		},
+		{
+			"techniqueID": "T1059",
+			"tactic": "execution",
+			"color": "#ff6666ff",
+			"comment": "Frequency: 12",
+			"enabled": true
+		},
+		{
+			"techniqueID": "T1055",
+			"tactic": "privilege-escalation",
+			"color": "#8ec843ff",
+			"comment": "Frequency: 72",
+			"enabled": true
+		},
+		{
+			"techniqueID": "T1027",
+			"tactic": "defense-evasion",
+			"color": "#ffe766ff",
+			"comment": "Frequency: 40",
+			"enabled": true
+		},
+		{
+			"techniqueID": "T1047",
+			"tactic": "execution",
+			"color": "#ff6666ff",
+			"comment": "Frequency: 15",
+			"enabled": true
+		},
+		{
+			"techniqueID": "T1203",
+			"tactic": "initial-access",
+			"color": "#31a354",
+			"comment": "Frequency: 55",
+			"enabled": true
+		},
+		{
+			"techniqueID": "T1210",
+			"tactic": "lateral-movement",
+			"color": "#ff6666ff",
+			"comment": "Frequency: 8",
+			"enabled": true
+		},
+		{
+			"techniqueID": "T1053",
+			"tactic": "persistence",
+			"color": "#8ec843ff",
+			"comment": "Frequency: 70",
+			"enabled": true
+		},
+		{
+			"techniqueID": "T1134",
+			"tactic": "privilege-escalation",
+			"color": "#ffe766ff",
+			"comment": "Frequency: 35",
+			"enabled": true
+		},
+		{
+			"techniqueID": "T1069",
+			"tactic": "discovery",
+			"color": "#8ec843ff",
+			"comment": "Frequency: 90",
+			"enabled": true
+		},
+		{
+			"techniqueID": "T1105",
+			"tactic": "command-and-control",
+			"color": "#31a354",
+			"comment": "Frequency: 60",
+			"enabled": true
+		},
+		{
+			"techniqueID": "T1497",
+			"tactic": "defense-evasion",
+			"color": "#ff6666ff",
+			"comment": "Frequency: 20",
+			"enabled": true
+		},
+		{
+			"techniqueID": "T1562",
+			"tactic": "impact",
+			"color": "#ffe766ff",
+			"comment": "Frequency: 45",
+			"enabled": true
+		}
+	],
+	"gradient": {
+		"colors": [
+			"#ff6666ff", 
+			"#ffe766ff", 
+			"#31a354"     
+		],
+		"minValue": 0,
+		"maxValue": 100
+	},
+	"legendItems": [],
+	"metadata": [],
+	"links": [],
+	"showTacticRowBackground": false,
+	"tacticRowBackground": "#dddddd",
+	"selectTechniquesAcrossTactics": true,
+	"selectSubtechniquesWithParent": false,
+	"selectVisibleTechniques": false
 }
